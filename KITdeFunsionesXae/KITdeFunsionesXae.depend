@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1492901457 source:c:\users\jmpit\downloads\proyectos\projectos del cod\kitdefunsionesxae\kitdefunsionesxae.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"KITdeFunsionesXae.h"
+
+1492901457 c:\users\jmpit\downloads\proyectos\projectos del cod\kitdefunsionesxae\kitdefunsionesxae.h
+
+1492901505 source:c:\users\jmpit\downloads\proyectos\projectos del cod\kitdefunsionesxae\main.c
+	"KITdeFunsionesXae.h"
+
+1492982986 source:c:\users\jmpit\downloads\proyectos\projectos del cod\programacio-i-master\kitdefunsionesxae\kitdefunsionesxae.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"KITdeFunsionesXae.h"
+
+1492981774 c:\users\jmpit\downloads\proyectos\projectos del cod\programacio-i-master\kitdefunsionesxae\kitdefunsionesxae.h
+
+1492982704 source:c:\users\jmpit\downloads\proyectos\projectos del cod\programacio-i-master\kitdefunsionesxae\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"KITdeFunsionesXae.h"
+
+1497793890 source:c:\users\public\cv\programacio-i-master\kitdefunsionesxae\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"KITdeFunsionesXae.h"
+
+1497793890 c:\users\public\cv\programacio-i-master\kitdefunsionesxae\kitdefunsionesxae.h
+
