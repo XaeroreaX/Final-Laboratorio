@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1532969356 source:e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1532969356 e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\arraylist.h
+
+1533008304 source:e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\cascara.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"ArrayList.h"
+	"SLetra.h"
+	"tools.h"
+	"cascara.h"
+
+1533008414 e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\sletra.h
+
+1533007388 e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\cascara.h
+
+1533008304 source:e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"SLetra.h"
+	"cascara.h"
+
+1533005842 source:e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\sletra.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"SLetra.h"
+
+1533005581 source:e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\tools.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1533005063 e:\xaeroreax\proyectos\projectos del cod\final\finaldetania\tools.h
+

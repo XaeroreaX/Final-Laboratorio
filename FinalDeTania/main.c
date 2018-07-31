@@ -1,22 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include "ArrayList.h"
+#include "SLetra.h"
+#include "cascara.h"
+#define DENIED -1
+#define OK 0
+#define OKP 1
+
+
 
 int main()
 {
     char seguir='s';
-    int opcion=0, returnAux = DENEID;
+    int opcion=0, returnAux = DENIED;
 
-    if(movieList == NULL) return returnAux;
+    ArrayList* LLetra = al_newArrayList();
+
+    if(SLetra_fileToListText("MOCK_DATA.csv", LLetra) == DENIED)
+        printf("WARNING\n\n");
 
     while(seguir=='s')
         {
             printf("1- Agregar Letra\n");
             printf("2- Borrar Letra\n");
             printf("3- Modificar Letra\n");
-            printf("4- comfirmar vocal/consonate")
+            printf("4- comfirmar vocal/consonate");
             printf("5- Listar letra\n");
             printf("6- Salir\n");
-            printf("ingrese opcion")
+            printf("ingrese opcion");
 
             scanf("%d",&opcion);
 
@@ -25,7 +37,8 @@ int main()
                 case 1:
                     system("cls");
 
-
+                    if(Cascara_Alta(LLetra) == DENIED)
+                        printf("WARNING\n\n");
 
                     system("pause");
                     break;
@@ -44,12 +57,24 @@ int main()
                 case 4:
                     system("cls");
 
-
+                    switch(Cascara_ConfirmarList(LLetra))
+                    {
+                        case DENIED:
+                            printf("WARNING\n\n");
+                            break;
+                        case OK:
+                            printf("Lista Vacia");
+                            break;
+                        case OKP:
+                            printf("Letras confirmadas");
+                    }
 
                     system("pause");
                    break;
                 case 5:
                     system("cls");
+
+                    Cascara_Listar(LLetra);
 
                     system("pause");
                     break;

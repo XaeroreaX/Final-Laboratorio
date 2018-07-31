@@ -7,7 +7,22 @@
 #define OKP 1
 
 
+char cargarCaracter(int tam, char caracteres[])
+{
+    char buffer[1024];
 
+    fflush(stdin);
+    gets(buffer);
+    while(strlen(buffer) > tam)
+    {
+        printf("ingreso mal la cadena de caracteres, ingrese de nuevo");
+        fflush(stdin);
+        gets(buffer);
+    }
+    strcpy(caracteres, buffer);
+
+    return caracteres[tam];
+}
 
 
 int isVocal(char character)
@@ -35,7 +50,7 @@ int isVocal(char character)
             case 'u':
                 returnAux = OKP;
                 break;
-            default
+            default:
                 returnAux = OK;
 
         }

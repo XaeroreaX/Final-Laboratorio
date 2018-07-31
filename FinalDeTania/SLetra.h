@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <ArrayList.h>
-#include <SLetra.h>
+
 
 
 typedef struct SLetra
@@ -16,13 +13,20 @@ typedef struct SLetra
 
 
 
+SLetra* SLetra_Constructor(char letra, char nombre[21]);
 
 
 
+SLetra* SLetra_GetLetraArgument();
 
 
+void SLetra_showListar(ArrayList* LList, void (*funcion)(SLetra*));
 
+void SLetra_show(SLetra* caracter);
 
+int SLetra_fileToListText(char path[], ArrayList* LList);
+
+int SLetra_CompareLetra(void* caracterA, void* caracterB);
 
 
 
