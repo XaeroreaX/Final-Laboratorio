@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1513179874 source:c:\martin\project\c codeblocks\finaldetania2\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1513179874 c:\martin\project\c codeblocks\finaldetania2\arraylist.h
+
+1533076833 source:c:\martin\project\c codeblocks\finaldetania2\cascara.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"SLetra.h"
+	"ArrayList.h"
+	"Tool.h"
+	"cascara.h"
+
+1533076007 c:\martin\project\c codeblocks\finaldetania2\sletra.h
+	"ArrayList.h"
+
+1533075908 c:\martin\project\c codeblocks\finaldetania2\tool.h
+
+1533076742 c:\martin\project\c codeblocks\finaldetania2\cascara.h
+
+1533076833 source:c:\martin\project\c codeblocks\finaldetania2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"ArrayList.h"
+	"SLetra.h"
+	"Tool.h"
+	"cascara.h"
+
+1533076781 source:c:\martin\project\c codeblocks\finaldetania2\sletra.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"ArrayList.h"
+	"SLetra.h"
+	"Tool.h"
+
+1533076352 source:c:\martin\project\c codeblocks\finaldetania2\tool.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"ArrayList.h"
+	"Tool.h"
+
