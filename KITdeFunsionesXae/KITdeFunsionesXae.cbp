@@ -31,10 +31,21 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ArrayList.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ArrayList.h" />
 		<Unit filename="KITdeFunsionesXae.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="KITdeFunsionesXae.h" />
+		<Unit filename="Tools.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tools.h" />
+		<Unit filename="ejemplos.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

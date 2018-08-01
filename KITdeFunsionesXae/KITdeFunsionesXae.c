@@ -6,72 +6,67 @@
 
 /**-----------------------------------------------------------CASCARA------------------------------------------------------------------*/
 
-int cascara(ArrayList* movieList)
+int cascara()
 {
 
-    char seguir='s';
-    int opcion=0, returnAux = DENEID;
 
-    if(movieList == NULL) return returnAux;
+    int opcion=0;
 
-    while(seguir=='s')
+
+
+    do
+    {
+        Tools_showOptions();
+
+        scanf("%d",&opcion);
+
+        switch(opcion)
         {
-            printf("1- Agregar \n");
-            printf("2- Borrar \n");
-            printf("3- Modificar \n");
-            printf("5- mostrar\n");
-            printf("6- Salir\n");
-            printf("ingrese opcion")
-
-            scanf("%d",&opcion);
-
-            switch(opcion)
-            {
-                case 1:
-                    system("cls");
+            case 1:
+                system("cls");
 
 
 
-                    system("pause");
-                    break;
-                case 2:
-                    system("cls");
+                system("pause");
+                break;
+            case 2:
+                system("cls");
 
 
-                    system("pause");
-                    break;
-                case 3:
-                    system("cls");
+                system("pause");
+                break;
+            case 3:
+                system("cls");
 
 
-                    system("pause");
-                    break;
-                case 4:
-                    system("cls");
+                system("pause");
+                break;
+            case 4:
+                system("cls");
 
 
 
-                    system("pause");
-                   break;
-                case 5:
-                    system("cls");
+                system("pause");
+               break;
+            case 5:
+                system("cls");
 
-                    system("pause");
-                    break;
-                case 6:
-                    seguir = 'n';
-                    break;
-                default:
-                    system("cls");
-                    printf("ingreso mal la opcion, por favor ingrese de nuevo");
-                    system("pause");
-                    break;
+                system("pause");
+                break;
+            case 6:
+                seguir = 'n';
+                break;
+            default:
+                system("cls");
+                printf("ingreso mal la opcion, por favor ingrese de nuevo");
+                system("pause");
+                break;
 
 
-            }
-            system("cls");
+        }while(seguir=='s');
+        system("cls");
 
-        }
+    }
     returnAux = OK;
     return returnAux;
 }
@@ -190,60 +185,6 @@ int AltaDeCliente(ArrayList* clienteList)
 
 
 
-int Song_getIdUnrepeatable(ArrayList* List)
-{
-    int flagEncontrado = DENIED,i, j,id = 1;
-
-
-
-    SSong* Struct1, *Struct2;
-
-    if(List == NULL) return DENIED;
-
-
-
-    if(List->isEmpty(List) == OK)
-    {
-
-
-        for(i = 0; i < List->len(List); i++)
-        {
-            Struct1 =(SSong*) List->get(List, i);
-
-            if(Struct1->id == id)
-            {
-                id = Struct1->id +1;
-            }
-            else
-            {
-
-                for(j = i + 1; j < List->len(List); j++)
-                {
-                    Struct2 =(SSong*) List->get(List, j);
-
-                    if(id == Struct2->id) break;
-
-                }
-
-
-                if(j < List->len(List)) flagEncontrado = OK;
-
-            }
-
-            if(flagEncontrado == DENIED)
-            {
-                id = Struct1->id + 1;
-            }
-            else
-            {
-                break;
-            }
-        }
-
-    }
-
-    return id;
-}
 
 
 
@@ -307,7 +248,7 @@ int bajaDeCliente(ArrayList* clienteList)
 
     if(clienteList->isEmpty(clienteList) != OKP)
     {
-        i = C_getIndex(clienteList);
+        i = Tools_getIndex(clienteList, function?);
 
         cliente = clienteList->pop(clienteList, i);
 
@@ -900,7 +841,6 @@ int C_compareCliente(void* clienteA, void* clienteB)
 
     }
 }
-
 
 
 
